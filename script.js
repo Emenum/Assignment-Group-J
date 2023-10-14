@@ -38,33 +38,7 @@ const networkPrefix = {
     "0912": "airtel",
     "0916": "mtn",
 };
-// const suggestionList = Object.keys(networkPrefix)
-// let phoneInput = document.querySelector("input[type='text']")
-// let networkLogo = document.getElementById("phoneNumber")
 
-// phoneInput.addEventListener("input",handleLogo)
-
-
-// //Function that manages Lofo
-// function handleLogo(e) {
-//     let e1 = e.currentTarget
-//     networkLogo.innerHTML=""
-
-//     if(e1.value.length ===11){
-//         let logo = document.createElement("img")
-//         Object.entries(networkPrefix).forEach(([key,value])=>{
-//             if(e1.value.startsWith(key)) {
-//                 logo.setAttribute("src",`./images/${value}.png`)
-//                 return
-//             }
-//         })
-//         networkLogo.innerHTML = " "
-//     networkLogo.appendChild(logo)
-//     }
-    
-// }
-//Auto 
-// const suggestionList = Object.keys(networkPrefix)
 
 let phoneInp = document.getElementById("phoneNumber");
 let telLogo = document.getElementById("tel-logo");
@@ -89,41 +63,3 @@ function handleLogo(e) {
     }
 
 }
-
-// // Autocomplete feature
-// let suggestions = document.getElementById("suggestions");
-
-// phoneInp.addEventListener("input", changeAutoComplete);
-// suggestions.addEventListener("click", selectItem);
-
-// function changeAutoComplete(e) {
-//     // Clear previous suggestions
-//     suggestions.innerHTML = ''
-    
-//     // Grab the value of input
-//     const el = e.currentTarget;
-//     const curVal = el.value.replaceAll(" ", "")
-
-//     // compare with list of values and filter
-//     const filteredList = suggestionList.filter((x) => { return x.startsWith(curVal)})
-
-//     // display list of values in alphabetical order
-//     filteredList.forEach((x) => {
-//         // Create a new 'li' element
-//         const li = document.createElement("li")
-//         li.innerText = x
-
-//         // Add new 'li' to suggestions
-//         suggestions.appendChild(li)
-
-//     })
-// }
-
-
-// function selectItem({ target }) {
-//     // Set the input value to the suggestion
-//     phoneInp.value = target.innerText
-
-//     // Clear all suggestions
-//     suggestions.innerHTML = ""
-// }

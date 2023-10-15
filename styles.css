@@ -7,12 +7,12 @@ body {
     background-color: #1e3799;
 }
 
-div {
+.form-container {
     background-color: #fff;
     padding: 40px;
-    border-radius: 15px;
+    border-radius: 8px;
     text-align: center;
-    width: 70%;
+    width: 40%;
     margin: 20px 20px 20px 20px;
 }
 
@@ -36,10 +36,10 @@ label {
 input {
     padding: 10px;
     margin-bottom: 16px;
-    border: 2px solid #000;
-    border-radius: 15px;
+    border: 1px solid #000;
+    border-radius: 8px;
     width: 100%;
-    font-weight: bold;
+    font-weight: 200;
 }
 #phone-box{
     width: 100%;
@@ -48,12 +48,60 @@ input {
     display: flex;
     justify-content: space-between;
 }
-#phone-box input:nth-child(1){
+
+.countryCode{
+    width: 20%;
+}
+
+.telco-logos{
+    width: 4%;
+    height: 35px;
+    margin-left: 365px;
+    position: absolute;
+    /* background-color: red; */
+    display: flex;
+    border-radius: 50%;
+   
+}
+
+.mtn{
+    background-image: url(./images/mtn.svg);
+    width: 100%;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+
+.airtel{
+    background-image: url(./images/airtel-nigeria.svg);
+    width: 100%;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+
+.glo{
+    background-image: url(./images/globacom-limited.svg);
+    width: 100%;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+
+.etisalat{
+    background-image: url(./images/9mobile.svg);
+    width: 100%;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+
+.hidden{
+    display: none;
+}
+
+/* #phone-box input:nth-child(1){
     width:5em;
     margin-right: .5em; 
   background: url("https://mapemond.com/wp-content/uploads/2019/05/airtel-logo-vector.png") no-repeat right;
   background-size: 50px;
-}
+} */
 
 button {
     padding: 10px 15%;

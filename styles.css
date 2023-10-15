@@ -64,28 +64,28 @@ input {
    
 }
 
-.telco1{
+.mtn{
     background-image: url(./images/mtn.svg);
     width: 100%;
     background-repeat: no-repeat;
     border-radius: 50%;
 }
 
-.telco2{
+.airtel{
     background-image: url(./images/airtel-nigeria.svg);
     width: 100%;
     background-repeat: no-repeat;
     border-radius: 50%;
 }
 
-.telco3{
+.glo{
     background-image: url(./images/globacom-limited.svg);
     width: 100%;
     background-repeat: no-repeat;
     border-radius: 50%;
 }
 
-.telco4{
+.etisalat{
     background-image: url(./images/9mobile.svg);
     width: 100%;
     background-repeat: no-repeat;

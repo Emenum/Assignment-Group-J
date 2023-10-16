@@ -37,13 +37,13 @@ const networkPrefix = {
     "0913": "mtn",
     "0912": "airtel",
     "0916": "mtn",
-};
+};//Mockup database for network Prefixes in Nigeria.(Data can be found on wikipedia)
 
 
 let phoneInput = document.getElementById("phoneNumber");//Variable for phone Input
 let telLogo = document.getElementById("tel-logo"); //Variable for network Logo
 //console.log(telLogo)
-phoneInput.addEventListener("input", handleLogo)//Event Listener for input
+phoneInput.addEventListener("input", handleLogo)//Event Listener for input that activates function to create logo
 
 
 function handleLogo(f) {

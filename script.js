@@ -40,25 +40,26 @@ const networkPrefix = {
 };
 
 
-let phoneInp = document.getElementById("phoneNumber");
-let telLogo = document.getElementById("tel-logo");
-console.log(telLogo)
-phoneInp.addEventListener("input", handleLogo)
+let phoneInput = document.getElementById("phoneNumber");//Variable for phone Input
+let telLogo = document.getElementById("tel-logo"); //Variable for network Logo
+//console.log(telLogo)
+phoneInput.addEventListener("input", handleLogo)//Event Listener for input
 
 
-function handleLogo(e) {
-    let el = e.currentTarget
+function handleLogo(f) {
+    let fl = f.currentTarget
     telLogo.innerHTML = ""
     
-    if (el.value.length === 11) {
+    if (fl.value.length === 11) {
         let logo = document.createElement("img")
+
         Object.entries(networkPrefix).forEach(([key, value]) => {
-            if (el.value.startsWith(key)) {
+            if (fl.value.startsWith(key)) {
                 logo.setAttribute("src", `./images/logos/${value}.png`)
                 return
             }
         })
-        telLogo.innerHTML = ""  // clear previous image before adding new one
+        telLogo.innerHTML = ""  // clears previous image before adding new one
         telLogo.appendChild(logo)
     }
 

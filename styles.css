@@ -54,4 +54,13 @@ input {
     max-width: 100px;
     max-height: 100px;
 }
+@media only screen and (max-width: 600px) {
+    .container {
+        max-width: 80%;
+    }
+
+    input {
+        width: 100%;
+    }
+}
 
